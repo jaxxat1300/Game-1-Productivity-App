@@ -3,13 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#8FBC8F" />
+    <link rel="manifest" href="/Game-1-Productivity-App/manifest.json" />
+    <link rel="apple-touch-icon" href="/Game-1-Productivity-App/icon-192.png" />
     <title>MindPlay - Mindful Gaming App</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/Game-1-Productivity-App/assets/index-Dx2DM4tM.js"></script>
-    <link rel="stylesheet" crossorigin href="/Game-1-Productivity-App/assets/index-7mlaOiRb.css">
+    <style>
+      /* Prevent pull-to-refresh and overscroll on mobile */
+      body {
+        overscroll-behavior-y: contain;
+        -webkit-overflow-scrolling: touch;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      #root {
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+      }
+      /* Hide scrollbar for cleaner mobile feel */
+      #root::-webkit-scrollbar {
+        display: none;
+      }
+      #root {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+    <script type="module" crossorigin src="/Game-1-Productivity-App/assets/index-Bov5GT3U.js"></script>
+    <link rel="stylesheet" crossorigin href="/Game-1-Productivity-App/assets/index-DzPYpXNE.css">
   </head>
   <body>
     <div id="root"></div>
