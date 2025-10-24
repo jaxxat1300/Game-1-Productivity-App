@@ -11,6 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+  background: #f5f5f5;
 }
 
 code {
