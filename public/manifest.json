@@ -1,0 +1,27 @@
+{
+  "name": "MindPlay - Mindful Gaming",
+  "short_name": "MindPlay",
+  "description": "Your daily dose of mindful gaming. Play, grow, thrive.",
+  "start_url": "/Game-1-Productivity-App/",
+  "display": "standalone",
+  "background_color": "#F5F9F6",
+  "theme_color": "#8FBC8F",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/Game-1-Productivity-App/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Game-1-Productivity-App/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["games", "health", "lifestyle"],
+  "screenshots": []
+}
+

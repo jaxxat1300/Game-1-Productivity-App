@@ -1,0 +1,18 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="120" fill="url(#gradient)"/>
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="512" y2="512">
+      <stop offset="0%" stop-color="#8FBC8F"/>
+      <stop offset="50%" stop-color="#87CEEB"/>
+      <stop offset="100%" stop-color="#DCD0FF"/>
+    </linearGradient>
+  </defs>
+  <!-- Brain Icon -->
+  <g transform="translate(128, 128)">
+    <path d="M128 192c-70.7 0-128-57.3-128-128s57.3-128 128-128s128 57.3 128 128s-57.3 128-128 128zm0-240C74.981 -48 32 -5.019 32 48s42.981 96 96 96s96-42.981 96-96S181.019-48 128-48z" fill="white" transform="scale(1.2)"/>
+    <circle cx="80" cy="80" r="12" fill="white"/>
+    <circle cx="176" cy="80" r="12" fill="white"/>
+    <path d="M128 140 Q 100 120, 90 100 M128 140 Q 156 120, 166 100" stroke="white" stroke-width="8" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>
+

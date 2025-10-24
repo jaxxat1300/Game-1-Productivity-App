@@ -9,10 +9,82 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Mobile-specific optimizations */
+@supports (padding: max(0px)) {
+  .safe-area-bottom {
+    padding-bottom: max(env(safe-area-inset-bottom), 0px);
+  }
+  .safe-area-top {
+    padding-top: max(env(safe-area-inset-top), 0px);
+  }
+}
+
+/* Smooth scrolling for mobile */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better touch interactions */
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+input,
+textarea {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+/* Prevent text selection on long press */
+* {
+  -webkit-touch-callout: none;
+}
+
+/* Custom scrollbar for webkit browsers (still nice on desktop) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c8e6d0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8d5ba;
+}
+
+/* Active state feedback */
+.active\:scale-95:active {
+  transform: scale(0.95);
+}
+
+/* Disable pull-to-refresh Chrome mobile */
+body {
+  overscroll-behavior-y: contain;
+}
+
+/* PWA safe area */
+@supports (padding: env(safe-area-inset-bottom)) {
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
 }
 
