@@ -46,8 +46,10 @@ const PhoneMockup = ({ children }) => {
               </div>
 
               {/* App Content */}
-              <div className="h-full overflow-hidden">
-                {children}
+              <div className="h-full overflow-y-auto overflow-x-hidden">
+                <div className="min-h-full">
+                  {children}
+                </div>
               </div>
 
               {/* Home Indicator (iPhone style) */}

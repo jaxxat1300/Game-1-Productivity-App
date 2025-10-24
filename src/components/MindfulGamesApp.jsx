@@ -127,7 +127,7 @@ const MindfulGamesApp = () => {
   // Welcome Screen
   if (screen === 'welcome') {
     return (
-      <div className="h-screen bg-gradient-to-br from-sage-400 via-peace-300 to-lavender-300 flex items-center justify-center p-6">
+      <div className="min-h-screen bg-gradient-to-br from-sage-400 via-peace-300 to-lavender-300 flex items-center justify-center p-6">
         <div className="text-center w-full max-w-md">
           <div className="mb-12 flex justify-center">
             <div className="relative">
@@ -165,7 +165,7 @@ const MindfulGamesApp = () => {
   // Login/Signup Screen
   if (screen === 'login' || screen === 'signup') {
     return (
-      <div className="h-screen bg-gradient-to-br from-sage-100 via-peace-50 to-lavender-50 flex items-center justify-center p-6 overflow-auto">
+      <div className="min-h-screen bg-gradient-to-br from-sage-100 via-peace-50 to-lavender-50 flex items-center justify-center p-6">
         <div className="bg-white rounded-4xl shadow-card p-8 w-full max-w-md my-auto">
           <div className="text-center mb-8">
             <div className="w-20 h-20 bg-gradient-to-br from-sage-400 to-peace-400 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-soft">
@@ -233,7 +233,7 @@ const MindfulGamesApp = () => {
   // Mood Check-In Screen
   if (screen === 'moodCheck') {
     return (
-      <div className="h-screen bg-gradient-to-br from-sage-50 via-peace-50 to-lavender-50 flex items-center justify-center p-6 overflow-auto">
+      <div className="min-h-screen bg-gradient-to-br from-sage-50 via-peace-50 to-lavender-50 flex items-center justify-center p-6">
         <div className="w-full max-w-2xl bg-white rounded-4xl shadow-card p-8 my-auto">
           <div className="text-center mb-8">
             <div className="text-6xl mb-4 animate-bounce-soft">💭</div>
@@ -318,7 +318,7 @@ const MindfulGamesApp = () => {
     // Dashboard Tab
     if (mobileTab === 'dashboard') {
       return (
-        <div className="h-screen bg-gradient-to-br from-sage-50 via-peace-50 to-lavender-50 flex flex-col">
+        <div className="min-h-screen bg-gradient-to-br from-sage-50 via-peace-50 to-lavender-50 flex flex-col md:h-full">
           <div className="flex-1 overflow-auto pb-20">
             {/* Header */}
             <div className="bg-white shadow-sm sticky top-0 z-10 px-6 pt-8 pb-6">
@@ -414,7 +414,7 @@ const MindfulGamesApp = () => {
     // Games Tab
     if (mobileTab === 'games') {
       return (
-        <div className="h-screen bg-gradient-to-br from-sage-50 via-peace-50 to-lavender-50 flex flex-col">
+        <div className="min-h-screen bg-gradient-to-br from-sage-50 via-peace-50 to-lavender-50 flex flex-col md:h-full">
           <div className="flex-1 overflow-auto pb-20">
             <div className="bg-white shadow-sm sticky top-0 z-10 px-6 pt-8 pb-4">
               <h1 className="text-3xl font-display font-bold text-gray-800 mb-4">All Games</h1>
@@ -484,7 +484,7 @@ const MindfulGamesApp = () => {
     // Mood Tab
     if (mobileTab === 'mood') {
       return (
-        <div className="h-screen bg-gradient-to-br from-sage-50 via-peace-50 to-lavender-50 flex flex-col">
+        <div className="min-h-screen bg-gradient-to-br from-sage-50 via-peace-50 to-lavender-50 flex flex-col md:h-full">
           <div className="flex-1 overflow-auto pb-20">
             <div className="bg-white shadow-sm px-6 pt-8 pb-6">
               <h1 className="text-3xl font-display font-bold text-gray-800 mb-2">Mood Tracker</h1>
@@ -531,7 +531,7 @@ const MindfulGamesApp = () => {
     // Achievements Tab
     if (mobileTab === 'achievements') {
       return (
-        <div className="h-screen bg-gradient-to-br from-sage-50 via-peace-50 to-lavender-50 flex flex-col">
+        <div className="min-h-screen bg-gradient-to-br from-sage-50 via-peace-50 to-lavender-50 flex flex-col md:h-full">
           <div className="flex-1 overflow-auto pb-20">
             <div className="bg-white shadow-sm px-6 pt-8 pb-6">
               <h1 className="text-3xl font-display font-bold text-gray-800 mb-2">Achievements</h1>
@@ -594,7 +594,7 @@ const MindfulGamesApp = () => {
     // Profile Tab
     if (mobileTab === 'profile') {
       return (
-        <div className="h-screen bg-gradient-to-br from-sage-50 via-peace-50 to-lavender-50 flex flex-col">
+        <div className="min-h-screen bg-gradient-to-br from-sage-50 via-peace-50 to-lavender-50 flex flex-col md:h-full">
           <div className="flex-1 overflow-auto pb-20">
             <div className="bg-white shadow-sm px-6 pt-8 pb-6">
               <div className="flex items-center gap-4 mb-6">

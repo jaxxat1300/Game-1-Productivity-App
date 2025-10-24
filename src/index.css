@@ -82,6 +82,14 @@ body {
   overscroll-behavior-y: contain;
 }
 
+/* Fix for phone mockup scrolling */
+@media (min-width: 768px) {
+  #root > div > div > div > div > div {
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 /* PWA safe area */
 @supports (padding: env(safe-area-inset-bottom)) {
   body {
